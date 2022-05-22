@@ -7,7 +7,3 @@ $pageName = basename($_SERVER['PHP_SELF']);
 if (!in_array($pageName, $obj->noFooter)) {
     include 'choices/footer.html';
 }
-
-if (!in_array($pageName, $obj->noBootstrapScripts)) {
-    include 'choices/bootstrapScripts.html';
-}

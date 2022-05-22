@@ -4,12 +4,8 @@ $json = file_get_contents('C:\xampp\htdocs\delicake\common\pages.json');
 $obj = json_decode($json);
 $pageName = basename($_SERVER['PHP_SELF']);
 
-if (!in_array($pageName, $obj->noBootstrapStyles)) {
-    include 'choices/bootstrapStyles.html';
-}
-
 if (!in_array($pageName, $obj->noHeader)) {
-    include 'choices/header.html';
+    include 'choices/header.php';
 }
 
 if (!in_array($pageName, $obj->noModel)) {
