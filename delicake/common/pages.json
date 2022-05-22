@@ -1,0 +1,8 @@
+{
+    "name": "website pages",
+    "noBootstrapStyles": [],
+    "noBootstrapScripts": ["footer.php"],
+    "noFooter": ["login.php"],
+    "noModel": [],
+    "noHeader": []
+}
