@@ -6,35 +6,22 @@
 </head>
 
 <body>
-    <div class="offcanvas__cart">
-        <div class="offcanvas__cart__links">
-            <a href="#" class="search-switch"><img src="data:image/webp;base64,UklGRk4BAABXRUJQVlA4TEIBAAAvFwAGEI9DkG1Tf+tnh4hQ2LZtm6qU1aW2bRsGmXp4hwUS+Ey0R8HmQIggoCIcKVJFVAB8qoBQBGwYUo16bo0LQdAWArI6Jzmwk8wAAHTbto03O2Yd1gxqhLVtm7H3+/+937npG0T0n5HbtmEkq+2uewYUfZmbn1L+cWsAsl2HDRq8DUiNFcnLxf7OYGS/xlrc2GiVb8NQ7TlmMwZFT543dghmWfMDAHb46YToAa+Vu84pOXSUGQYwz3fo3Oa68r2hZZL3AC64oKWbHwBuGNFi4x+Ac65o6eMLgDXuaZnmKYAJlqw6zrgMwPTFhKbBVtkNADOshMQcr8xA8YSFsJDrgc8WKNqfWFt1AABMs79sDQk/ao+snKWXErs5ssDvXhgdv2uRJPkctV7Jgzee2szO+QCo0/vv5QLtzXLCo/aAOTkC" alt=""></a>
-            <a href="#"><img src="data:image/webp;base64,UklGRkoBAABXRUJQVlA4TD0BAAAvGYAFEJ8jEEjy136ICIdt2wZy8Cm3d/fpBwiEXAcJmYQJeVwMA2HIcHAQjoPm4kWGwHwIQ64rk8C8YCY8Jn8cMoGDgRhg2bZtxtpl27afbdu2zSRVu/9fYRMi+j8BAOAe27s8HnMBgKmxe3U8G4Hy8Dflj2UgdEZ5b8UuW6C4nvUkttidzH/youBOTn3w1AE0+ZGGvPbFHmfMAOC94gosDyxCOf4stKHseenFyjyEerAE9VHOz7Jfg2YfzzeZMQY/98ssGWPr3g5x2pgcd/zSq9uQI3awwgOLAeO8scJ5zVV9ze5XAoD/iYt6qoJQgTz6zjltxd9uG8rJdy5qKf5yAOrJdy6q1f97I9CafOOaSaEtdPugPfLMbQuAwa7Qgt7wHfdtmOBfHfoDtzxZ4lcBRrovyfcUjHXObYShFQA=" alt=""></a>
-        </div>
-        <div class="offcanvas__cart__item">
-            <a href="#"><img src="data:image/webp;base64,UklGRsQAAABXRUJQVlA4TLgAAAAvFoAGEAcSEQzbRlKcvGTu7pkhCpWwJ0CvvGfVSu11DhGGweCQNkFsZPxViIPSIhzJtm069zu2dWP9+CvOmf+4npppRvRfkdu2jYjc0vEOkvntQbdMWu7iCwDnnGbsC97L9jhBllc3xK1ARN4OJ+VYj19FvDpCRdytM/MMdxZdETJzz+vAzHaNUa02xaEmGgk/+EQbVIlqmJOoKvzgGQuVsoZUMW0p0vnHahYMvOI+zBydyT40sAoA" alt=""> <span>0</span></a>
-            <div class="cart__price">Cart: <span>$0.00</span></div>
-        </div>
-    </div>
-    <div class="offcanvas__logo">
-        <a href="./index.html"><img src="data:image/webp;base64,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
-
-    <div class=" breadcrumb-option">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="breadcrumb__text">
-                            <h2>Shopping cart</h2>
-                        </div>
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__text">
+                        <h2>Shopping cart</h2>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="breadcrumb__links">
-                            <a href="./index.html">Home</a>
-                            <span>Shopping cart</span>
-                        </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="breadcrumb__links">
+                        <a href="./index.html">Home</a>
+                        <span>Shopping cart</span>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
     <section class="shopping-cart spad">
