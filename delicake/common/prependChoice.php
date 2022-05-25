@@ -1,5 +1,5 @@
 <?php
-// read pages.json into $json which is a string
+// Read pages.json into $json which is a string
 $json = file_get_contents('C:\xampp\htdocs\delicake\common\pages.json');
 $obj = json_decode($json);
 $pageName = basename($_SERVER['PHP_SELF']);

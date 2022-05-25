@@ -17,7 +17,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="breadcrumb__links">
-            <a href="./index.html">Home</a>
+            <a href="../index.php">Home</a>
             <span>Shopping cart</span>
           </div>
         </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="product__cart__item__text">
                       <h6>T-shirt Contrast Pocket</h6>
-                      <h5>$98.49</h5>
+                      <h5>€98.49</h5>
                     </div>
                   </td>
                   <td class="quantity__item">
@@ -57,7 +57,7 @@
                       </div>
                     </div>
                   </td>
-                  <td class="cart__price">$ 30.00</td>
+                  <td class="cart__price">€30.00</td>
                   <td class="cart__close"><span class="icon_close"></span></td>
                 </tr>
                 <tr>
@@ -67,7 +67,7 @@
                     </div>
                     <div class="product__cart__item__text">
                       <h6>Diagonal Textured Cap</h6>
-                      <h5>$98.49</h5>
+                      <h5>€98.49</h5>
                     </div>
                   </td>
                   <td class="quantity__item">
@@ -77,7 +77,7 @@
                       </div>
                     </div>
                   </td>
-                  <td class="cart__price">$ 32.50</td>
+                  <td class="cart__price">€32.50</td>
                   <td class="cart__close"><span class="icon_close"></span></td>
                 </tr>
                 <tr>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="product__cart__item__text">
                       <h6>Basic Flowing Scarf</h6>
-                      <h5>$98.49</h5>
+                      <h5>€98.49</h5>
                     </div>
                   </td>
                   <td class="quantity__item">
@@ -97,7 +97,7 @@
                       </div>
                     </div>
                   </td>
-                  <td class="cart__price">$ 47.00</td>
+                  <td class="cart__price">€47.00</td>
                   <td class="cart__close"><span class="icon_close"></span></td>
                 </tr>
                 <tr>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="product__cart__item__text">
                       <h6>Basic Flowing Scarf</h6>
-                      <h5>$98.49</h5>
+                      <h5>€98.49</h5>
                     </div>
                   </td>
                   <td class="quantity__item">
@@ -117,7 +117,7 @@
                       </div>
                     </div>
                   </td>
-                  <td class="cart__price">$ 30.00</td>
+                  <td class="cart__price">€30.00</td>
                   <td class="cart__close"><span class="icon_close"></span></td>
                 </tr>
               </tbody>
@@ -131,7 +131,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="continue__btn update__btn">
-                <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
+                <a href="#"><span class="fa fa-spinner"></i> Update cart</a>
               </div>
             </div>
           </div>
@@ -147,8 +147,8 @@
           <div class="cart__total">
             <h6>Cart total</h6>
             <ul>
-              <li>Subtotal <span>$ 169.50</span></li>
-              <li>Total <span>$ 169.50</span></li>
+              <li>Subtotal <span>€169.50</span></li>
+              <li>Total <span>€169.50</span></li>
             </ul>
             <a href="#" class="primary-btn">Proceed to checkout</a>
           </div>

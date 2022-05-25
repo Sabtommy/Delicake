@@ -9,7 +9,7 @@
 <body>
   <section class="hero">
     <div class="hero__slider owl-carousel">
-      <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+      <div class="hero__item set-bg" data-setbg="">
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8">
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+      <div class="hero__item set-bg" data-setbg="">
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8">
@@ -42,37 +42,37 @@
         <div class="categories__slider owl-carousel">
           <div class="categories__item">
             <div class="categories__item__icon">
-              <span class="flaticon-029-cupcake-3"></span>
+              <span class="icon-cupcake-3"></span>
               <h5>Cupcake</h5>
             </div>
           </div>
           <div class="categories__item">
             <div class="categories__item__icon">
-              <span class="flaticon-034-chocolate-roll"></span>
+              <span class="icon-chocolate-roll"></span>
               <h5>Butter</h5>
             </div>
           </div>
           <div class="categories__item">
             <div class="categories__item__icon">
-              <span class="flaticon-005-pancake"></span>
+              <span class="icon-pancake"></span>
               <h5>Red Velvet</h5>
             </div>
           </div>
           <div class="categories__item">
             <div class="categories__item__icon">
-              <span class="flaticon-030-cupcake-2"></span>
+              <span class="icon-cupcake-2"></span>
               <h5>Biscuit</h5>
             </div>
           </div>
           <div class="categories__item">
             <div class="categories__item__icon">
-              <span class="flaticon-006-macarons"></span>
+              <span class="icon-macarons"></span>
               <h5>Donut</h5>
             </div>
           </div>
           <div class="categories__item">
             <div class="categories__item__icon">
-              <span class="flaticon-006-macarons"></span>
+              <span class="icon-macarons"></span>
               <h5>Cupcake</h5>
             </div>
           </div>
@@ -87,14 +87,14 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Dozen Cupcakes</a></h6>
-              <div class="product__item__price">$32.00</div>
+              <div class="product__item__price">€32.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -103,14 +103,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Cookies and Cream</a></h6>
-              <div class="product__item__price">$30.00</div>
+              <div class="product__item__price">€30.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -119,14 +119,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Gluten Free Mini Dozen</a></h6>
-              <div class="product__item__price">$31.00</div>
+              <div class="product__item__price">€31.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -135,14 +135,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Cookie Dough</a></h6>
-              <div class="product__item__price">$25.00</div>
+              <div class="product__item__price">€25.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -151,14 +151,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Vanilla Salted Caramel</a></h6>
-              <div class="product__item__price">$05.00</div>
+              <div class="product__item__price">€05.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -167,14 +167,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">German Chocolate</a></h6>
-              <div class="product__item__price">$14.00</div>
+              <div class="product__item__price">€14.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -183,14 +183,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-7.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Dulce De Leche</a></h6>
-              <div class="product__item__price">$32.00</div>
+              <div class="product__item__price">€32.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -199,14 +199,14 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg="img/shop/product-8.jpg">
+            <div class="product__item__pic set-bg" data-setbg="">
               <div class="product__label">
                 <span>Cupcake</span>
               </div>
             </div>
             <div class="product__item__text">
               <h6><a href="#">Mississippi Mud</a></h6>
-              <div class="product__item__price">$08.00</div>
+              <div class="product__item__price">€8.00</div>
               <div class="cart_add">
                 <a href="#">Add to cart</a>
               </div>
@@ -241,8 +241,10 @@
           </div>
         </div>
       </div>
-      <div class="class__video set-bg" data-setbg="img/class-video.jpg">
-        <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+      <div class="class__video set-bg" data-setbg="">
+        <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1" class="play-btn video-popup">
+          <span class="fa fa-play"></span>
+        </a>
       </div>
     </div>
   </section>
@@ -265,57 +267,57 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+          <div class="team__item set-bg" data-setbg="">
             <div class="team__item__text">
               <h6>Randy Butler</h6>
-              <span>Decorater</span>
+              <span>Decorator</span>
               <div class="team__item__social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-youtube-play"></span></a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="team__item set-bg" data-setbg="img/team/team-2.jpg">
+          <div class="team__item set-bg" data-setbg="">
             <div class="team__item__text">
               <h6>Randy Butler</h6>
-              <span>Decorater</span>
+              <span>Decorator</span>
               <div class="team__item__social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-youtube-play"></span></a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="team__item set-bg" data-setbg="img/team/team-3.jpg">
+          <div class="team__item set-bg" data-setbg="">
             <div class="team__item__text">
               <h6>Randy Butler</h6>
-              <span>Decorater</span>
+              <span>Decorator</span>
               <div class="team__item__social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-youtube-play"></span></a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="team__item set-bg" data-setbg="img/team/team-4.jpg">
+          <div class="team__item set-bg" data-setbg="">
             <div class="team__item__text">
               <h6>Randy Butler</h6>
-              <span>Decorater</span>
+              <span>Decorator</span>
               <div class="team__item__social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-youtube-play"></span></a>
               </div>
             </div>
           </div>
@@ -341,7 +343,7 @@
             <div class="testimonial__item">
               <div class="testimonial__author">
                 <div class="testimonial__author__pic">
-                  <img src="img/testimonial/xta-1.jpg.pagespeed.ic.k5i2AJ7B-5.webp" alt="" data-pagespeed-url-hash="3283024380" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <img src="">
                 </div>
                 <div class="testimonial__author__text">
                   <h5>Kerry D.Silva</h5>
@@ -363,7 +365,7 @@
             <div class="testimonial__item">
               <div class="testimonial__author">
                 <div class="testimonial__author__pic">
-                  <img src="img/testimonial/xta-2.jpg.pagespeed.ic.FhCiwe89-P.webp" alt="" data-pagespeed-url-hash="3577524301" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <img src="">
                 </div>
                 <div class="testimonial__author__text">
                   <h5>Kerry D.Silva</h5>
@@ -385,7 +387,7 @@
             <div class="testimonial__item">
               <div class="testimonial__author">
                 <div class="testimonial__author__pic">
-                  <img src="img/testimonial/xta-1.jpg.pagespeed.ic.k5i2AJ7B-5.webp" alt="" data-pagespeed-url-hash="3283024380" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <img src="">
                 </div>
                 <div class="testimonial__author__text">
                   <h5>Ophelia Nunez</h5>
@@ -407,7 +409,7 @@
             <div class="testimonial__item">
               <div class="testimonial__author">
                 <div class="testimonial__author__pic">
-                  <img src="img/testimonial/xta-2.jpg.pagespeed.ic.FhCiwe89-P.webp" alt="" data-pagespeed-url-hash="3577524301" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <img src="">
                 </div>
                 <div class="testimonial__author__text">
                   <h5>Kerry D.Silva</h5>
@@ -429,7 +431,7 @@
             <div class="testimonial__item">
               <div class="testimonial__author">
                 <div class="testimonial__author__pic">
-                  <img src="img/testimonial/xta-1.jpg.pagespeed.ic.k5i2AJ7B-5.webp" alt="" data-pagespeed-url-hash="3283024380" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <img src="">
                 </div>
                 <div class="testimonial__author__text">
                   <h5>Ophelia Nunez</h5>
@@ -451,7 +453,7 @@
             <div class="testimonial__item">
               <div class="testimonial__author">
                 <div class="testimonial__author__pic">
-                  <img src="img/testimonial/xta-2.jpg.pagespeed.ic.FhCiwe89-P.webp" alt="" data-pagespeed-url-hash="3577524301" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                  <img src="">
                 </div>
                 <div class="testimonial__author__text">
                   <h5>Kerry D.Silva</h5>
@@ -484,45 +486,45 @@
               <span>Follow us on instagram</span>
               <h2>Sweet moments are saved as memories.</h2>
             </div>
-            <h5><i class="fa-brands fa-instagram"></i> @delicake</h5>
+            <h5><span class="fa-brands fa-instagram"></span> @delicake</h5>
           </div>
         </div>
         <div class="col-lg-8">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-6">
               <div class="instagram__pic">
-                <img src="img/instagram/xinstagram-1.jpg.pagespeed.ic.-miiHU9z0s.webp" alt="" data-pagespeed-url-hash="726066832" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img src="">
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-6">
               <div class="instagram__pic middle__pic">
-                <img src="img/instagram/xinstagram-2.jpg.pagespeed.ic.PrUe97YaNT.webp" alt="" data-pagespeed-url-hash="1020566753" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img src="">
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-6">
               <div class="instagram__pic">
-                <img src="img/instagram/xinstagram-3.jpg.pagespeed.ic.41aoMJSE-B.webp" alt="" data-pagespeed-url-hash="1315066674" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img src=""">
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-              <div class="instagram__pic">
-                <img src="img/instagram/xinstagram-4.jpg.pagespeed.ic.DaPGnAyF-x.webp" alt="" data-pagespeed-url-hash="1609566595" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="instagram__pic">
+                  <img src="">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-              <div class="instagram__pic middle__pic">
-                <img src="img/instagram/xinstagram-5.jpg.pagespeed.ic.YBQyF2M-6c.webp" alt="" data-pagespeed-url-hash="1904066516" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="instagram__pic middle__pic">
+                  <img src="">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-6">
-              <div class="instagram__pic">
-                <img src="img/instagram/xinstagram-3.jpg.pagespeed.ic.41aoMJSE-B.webp" alt="" data-pagespeed-url-hash="1315066674" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                <div class="instagram__pic">
+                  <img src="">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -533,22 +535,15 @@
           <div class="map__inner">
             <h6>COlorado</h6>
             <ul>
-              <li>1000 Lakepoint Dr, Frisco, CO 80443, USA</li>
-              <li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="396a4e5c5c4d5a58525c794a4c4949564b4d175a5654">[email&#160;protected]</a></li>
+              <li>1000 Lakepoint Dr, Milan, CO 80443, IT</li>
               <li>+1 800-786-1000</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="map__iframe">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10784.188505644011!2d19.053119335158936!3d47.48899529453826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1543907528304" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js+jquery.nice-select.min.js+jquery.barfiller.js+jquery.magnific-popup.min.js.pagespeed.jc.2i8oRofkTE.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 

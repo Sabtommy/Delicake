@@ -17,8 +17,8 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="breadcrumb__links">
-            <a href="./index.html">Home</a>
-            <a href="./shop.html">Shop</a>
+            <a href="../index.php">Home</a>
+            <a href="../shop.php">Shop</a>
             <span>Sweet autumn leaves</span>
           </div>
         </div>
@@ -32,23 +32,23 @@
         <div class="col-lg-6">
           <div class="product__details__img">
             <div class="product__details__big__img">
-              <img class="big_img" src="img/shop/details/xproduct-big-1.jpg.pagespeed.ic.juiukUfpJw.webp" alt="" data-pagespeed-url-hash="128786407" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+              <img class="big_img" src="">
             </div>
             <div class="product__details__thumb">
               <div class="pt__item active">
-                <img data-imgbigurl="img/shop/details/product-big-2.jpg" src="img/shop/details/xproduct-big-2.jpg.pagespeed.ic.13dtbOIuwv.webp" alt="" data-pagespeed-url-hash="423286328" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img data-imgbigurl="" src="">
               </div>
               <div class="pt__item">
-                <img data-imgbigurl="img/shop/details/product-big-1.jpg" src="img/shop/details/xproduct-big-1.jpg.pagespeed.ic.juiukUfpJw.webp" alt="" data-pagespeed-url-hash="128786407" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img data-imgbigurl="" src="">
               </div>
               <div class="pt__item">
-                <img data-imgbigurl="img/shop/details/product-big-4.jpg" src="img/shop/details/xproduct-big-4.jpg.pagespeed.ic.ec9amARCUG.webp" alt="" data-pagespeed-url-hash="1012286170" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img data-imgbigurl="" src="">
               </div>
               <div class="pt__item">
-                <img data-imgbigurl="img/shop/details/product-big-3.jpg" src="img/shop/details/xproduct-big-3.jpg.pagespeed.ic.XMfWRGgAvn.webp" alt="" data-pagespeed-url-hash="717786249" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img data-imgbigurl="" src="">
               </div>
               <div class="pt__item">
-                <img data-imgbigurl="img/shop/details/product-big-5.jpg" src="img/shop/details/xproduct-big-5.jpg.pagespeed.ic.-WMOtXR79Q.webp" alt="" data-pagespeed-url-hash="1306786091" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                <img data-imgbigurl="" src="">
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
           <div class="product__details__text">
             <div class="product__label">Cupcake</div>
             <h4>SWEET AUTUMN LEAVES</h4>
-            <h5>$26.41</h5>
+            <h5>€26.41</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
             <ul>
@@ -142,14 +142,14 @@
         <div class="related__products__slider owl-carousel">
           <div class="col-lg-3">
             <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+              <div class="product__item__pic set-bg" data-setbg="">
                 <div class="product__label">
                   <span>Cupcake</span>
                 </div>
               </div>
               <div class="product__item__text">
                 <h6><a href="#">Dozen Cupcakes</a></h6>
-                <div class="product__item__price">$32.00</div>
+                <div class="product__item__price">€32.00</div>
                 <div class="cart_add">
                   <a href="#">Add to cart</a>
                 </div>
@@ -158,14 +158,14 @@
           </div>
           <div class="col-lg-3">
             <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+              <div class="product__item__pic set-bg" data-setbg="">
                 <div class="product__label">
                   <span>Cupcake</span>
                 </div>
               </div>
               <div class="product__item__text">
                 <h6><a href="#">Cookies and Cream</a></h6>
-                <div class="product__item__price">$30.00</div>
+                <div class="product__item__price">€30.00</div>
                 <div class="cart_add">
                   <a href="#">Add to cart</a>
                 </div>
@@ -174,14 +174,14 @@
           </div>
           <div class="col-lg-3">
             <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
+              <div class="product__item__pic set-bg" data-setbg="">
                 <div class="product__label">
                   <span>Cupcake</span>
                 </div>
               </div>
               <div class="product__item__text">
                 <h6><a href="#">Gluten Free Mini Dozen</a></h6>
-                <div class="product__item__price">$31.00</div>
+                <div class="product__item__price">€31.00</div>
                 <div class="cart_add">
                   <a href="#">Add to cart</a>
                 </div>
@@ -190,14 +190,14 @@
           </div>
           <div class="col-lg-3">
             <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
+              <div class="product__item__pic set-bg" data-setbg="">
                 <div class="product__label">
                   <span>Cupcake</span>
                 </div>
               </div>
               <div class="product__item__text">
                 <h6><a href="#">Cookie Dough</a></h6>
-                <div class="product__item__price">$25.00</div>
+                <div class="product__item__price">€25.00</div>
                 <div class="cart_add">
                   <a href="#">Add to cart</a>
                 </div>
@@ -206,14 +206,14 @@
           </div>
           <div class="col-lg-3">
             <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
+              <div class="product__item__pic set-bg" data-setbg="">
                 <div class="product__label">
                   <span>Cupcake</span>
                 </div>
               </div>
               <div class="product__item__text">
                 <h6><a href="#">Vanilla Salted Caramel</a></h6>
-                <div class="product__item__price">$05.00</div>
+                <div class="product__item__price">€5.00</div>
                 <div class="cart_add">
                   <a href="#">Add to cart</a>
                 </div>
@@ -222,14 +222,14 @@
           </div>
           <div class="col-lg-3">
             <div class="product__item">
-              <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
+              <div class="product__item__pic set-bg" data-setbg="">
                 <div class="product__label">
                   <span>Cupcake</span>
                 </div>
               </div>
               <div class="product__item__text">
                 <h6><a href="#">German Chocolate</a></h6>
-                <div class="product__item__price">$14.00</div>
+                <div class="product__item__price">€14.00</div>
                 <div class="cart_add">
                   <a href="#">Add to cart</a>
                 </div>

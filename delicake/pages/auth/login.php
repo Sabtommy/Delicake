@@ -30,7 +30,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-user text-muted"></i>
+                  <span class="fa fa-user text-muted"></span>
                 </span>
               </div>
               <input id="firstName" type="text" name="firstname" placeholder="First Name" class="form-control bg-white border-left-0 border-md" />
@@ -45,7 +45,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-user text-muted"></i>
+                  <span class="fa fa-user text-muted"></span>
                 </span>
               </div>
               <input id="lastName" type="text" name="lastname" placeholder="Last Name" class="form-control bg-white border-left-0 border-md" />
@@ -60,7 +60,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-envelope text-muted"></i>
+                  <span class="fa fa-envelope text-muted"></span>
                 </span>
               </div>
               <input id="email" type="email" name="email" placeholder="Email Address" class="form-control bg-white border-left-0 border-md" />
@@ -75,7 +75,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-phone-square text-muted"></i>
+                  <span class="fa fa-phone-square text-muted"></span>
                 </span>
               </div>
               <select id="countryCode" name="countryCode" style="max-width: 80px" class="
@@ -104,7 +104,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-black-tie text-muted"></i>
+                  <span class="fa fa-black-tie text-muted"></span>
                 </span>
               </div>
               <select id="job" name="jobtitle" class="
@@ -130,7 +130,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-lock text-muted"></i>
+                  <span class="fa fa-lock text-muted"></span>
                 </span>
               </div>
               <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-left-0 border-md" />
@@ -145,7 +145,7 @@
                       px-4
                       border-md border-right-0
                     ">
-                  <i class="fa fa-lock text-muted"></i>
+                  <span class="fa fa-lock text-muted"></span>
                 </span>
               </div>
               <input id="passwordConfirmation" type="text" name="passwordConfirmation" placeholder="Confirm Password" class="form-control bg-white border-left-0 border-md" />
