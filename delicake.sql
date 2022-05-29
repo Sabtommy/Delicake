@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mar 28, 2022 alle 09:28
--- Versione del server: 10.4.18-MariaDB
--- Versione PHP: 8.0.3
+-- Creato il: Mag 29, 2022 alle 15:24
+-- Versione del server: 10.4.22-MariaDB
+-- Versione PHP: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbprova`
+-- Database: `delicake`
 --
 
 -- --------------------------------------------------------
@@ -29,11 +29,35 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `addresses` (
   `addressId` int(11) NOT NULL,
-  `street` varchar(255) NOT NULL,
-  `number` varchar(255) NOT NULL,
-  `postCode` varchar(255) NOT NULL,
-  `townId` int(11) NOT NULL,
+  `street` varchar(100) NOT NULL,
+  `number` int(5) NOT NULL,
+  `postcode` int(5) NOT NULL,
+  `townId` int(4) NOT NULL,
   `deleted` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `carts`
+--
+
+CREATE TABLE `carts` (
+  `userId` int(11) NOT NULL,
+  `productId` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `deleted` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `categories`
+--
+
+CREATE TABLE `categories` (
+  `categoryId` int(11) NOT NULL,
+  `categoryName` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -44,8 +68,8 @@ CREATE TABLE `addresses` (
 
 CREATE TABLE `images` (
   `imageId` int(11) NOT NULL,
-  `imageName` varchar(255) NOT NULL,
-  `vendorId` int(11) DEFAULT NULL,
+  `path` varchar(255) NOT NULL,
+  `userId` int(11) DEFAULT NULL,
   `productId` int(11) DEFAULT NULL,
   `deleted` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -58,8 +82,24 @@ CREATE TABLE `images` (
 
 CREATE TABLE `products` (
   `productId` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `productName` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
+  `quantityAvailable` int(11) NOT NULL,
+  `actualPrice` decimal(4,2) NOT NULL,
+  `retailPrice` decimal(4,2) NOT NULL,
+  `insertionDate` date NOT NULL DEFAULT curdate(),
+  `deleted` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `productscategories`
+--
+
+CREATE TABLE `productscategories` (
+  `productId` int(11) NOT NULL,
+  `categoryId` int(11) NOT NULL,
   `deleted` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -229,11 +269,27 @@ INSERT INTO `regions` (`regionId`, `regionName`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `reviewId` int(11) NOT NULL,
+  `userId` int(11) NOT NULL,
+  `rating` decimal(1,1) NOT NULL,
+  `reviewText` varchar(255) NOT NULL,
+  `submitDate` date NOT NULL DEFAULT curdate(),
+  `productId` int(11) NOT NULL,
+  `deleted` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struttura della tabella `towns`
 --
 
 CREATE TABLE `towns` (
-  `townId` int(11) NOT NULL,
+  `townId` int(4) NOT NULL,
   `townName` varchar(34) NOT NULL,
   `provinceId` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -8165,49 +8221,8 @@ CREATE TABLE `users` (
   `name` varchar(255) NOT NULL,
   `surname` varchar(255) NOT NULL,
   `dateOfBirth` date NOT NULL,
-  `phone` int(11) DEFAULT NULL,
-  `imageId` int(11) DEFAULT NULL,
+  `phone` varchar(50) DEFAULT NULL,
   `addressId` int(11) DEFAULT NULL,
-  `deleted` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `usersproducts`
---
-
-CREATE TABLE `usersproducts` (
-  `userId` int(11) NOT NULL,
-  `productId` int(11) NOT NULL,
-  `deleted` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `vendors`
---
-
-CREATE TABLE `vendors` (
-  `vendorId` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `phone` int(11) DEFAULT NULL,
-  `addressId` int(11) NOT NULL,
-  `deleted` tinyint(1) NOT NULL DEFAULT 0
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struttura della tabella `vendorsproducts`
---
-
-CREATE TABLE `vendorsproducts` (
-  `vendorId` int(11) NOT NULL,
-  `productId` int(11) NOT NULL,
   `deleted` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -8223,11 +8238,23 @@ ALTER TABLE `addresses`
   ADD KEY `townId` (`townId`);
 
 --
+-- Indici per le tabelle `carts`
+--
+ALTER TABLE `carts`
+  ADD KEY `userId` (`userId`),
+  ADD KEY `productId` (`productId`);
+
+--
+-- Indici per le tabelle `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`categoryId`);
+
+--
 -- Indici per le tabelle `images`
 --
 ALTER TABLE `images`
-  ADD PRIMARY KEY (`imageId`),
-  ADD KEY `vendorId` (`vendorId`),
+  ADD KEY `userId` (`userId`),
   ADD KEY `productId` (`productId`);
 
 --
@@ -8235,6 +8262,13 @@ ALTER TABLE `images`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`productId`);
+
+--
+-- Indici per le tabelle `productscategories`
+--
+ALTER TABLE `productscategories`
+  ADD KEY `productId` (`productId`),
+  ADD KEY `categoryId` (`categoryId`);
 
 --
 -- Indici per le tabelle `provinces`
@@ -8250,6 +8284,14 @@ ALTER TABLE `regions`
   ADD PRIMARY KEY (`regionId`);
 
 --
+-- Indici per le tabelle `reviews`
+--
+ALTER TABLE `reviews`
+  ADD PRIMARY KEY (`reviewId`),
+  ADD KEY `userId` (`userId`),
+  ADD KEY `productId` (`productId`);
+
+--
 -- Indici per le tabelle `towns`
 --
 ALTER TABLE `towns`
@@ -8261,31 +8303,7 @@ ALTER TABLE `towns`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`userId`),
-  ADD UNIQUE KEY `username` (`username`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD KEY `imageId` (`imageId`),
   ADD KEY `addressId` (`addressId`);
-
---
--- Indici per le tabelle `usersproducts`
---
-ALTER TABLE `usersproducts`
-  ADD KEY `userId` (`userId`),
-  ADD KEY `productId` (`productId`);
-
---
--- Indici per le tabelle `vendors`
---
-ALTER TABLE `vendors`
-  ADD PRIMARY KEY (`vendorId`),
-  ADD KEY `addressId` (`addressId`);
-
---
--- Indici per le tabelle `vendorsproducts`
---
-ALTER TABLE `vendorsproducts`
-  ADD KEY `vendorId` (`vendorId`),
-  ADD KEY `productId` (`productId`);
 
 --
 -- AUTO_INCREMENT per le tabelle scaricate
@@ -8298,10 +8316,10 @@ ALTER TABLE `addresses`
   MODIFY `addressId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT per la tabella `images`
+-- AUTO_INCREMENT per la tabella `categories`
 --
-ALTER TABLE `images`
-  MODIFY `imageId` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `categories`
+  MODIFY `categoryId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT per la tabella `products`
@@ -8322,22 +8340,22 @@ ALTER TABLE `regions`
   MODIFY `regionId` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
+-- AUTO_INCREMENT per la tabella `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `reviewId` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT per la tabella `towns`
 --
 ALTER TABLE `towns`
-  MODIFY `townId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8192;
+  MODIFY `townId` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8192;
 
 --
 -- AUTO_INCREMENT per la tabella `users`
 --
 ALTER TABLE `users`
   MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT per la tabella `vendors`
---
-ALTER TABLE `vendors`
-  MODIFY `vendorId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Limiti per le tabelle scaricate
@@ -8350,17 +8368,38 @@ ALTER TABLE `addresses`
   ADD CONSTRAINT `addresses_ibfk_1` FOREIGN KEY (`townId`) REFERENCES `towns` (`townId`) ON DELETE CASCADE;
 
 --
+-- Limiti per la tabella `carts`
+--
+ALTER TABLE `carts`
+  ADD CONSTRAINT `carts_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE,
+  ADD CONSTRAINT `carts_ibfk_2` FOREIGN KEY (`productId`) REFERENCES `products` (`productId`) ON DELETE CASCADE;
+
+--
 -- Limiti per la tabella `images`
 --
 ALTER TABLE `images`
-  ADD CONSTRAINT `images_ibfk_1` FOREIGN KEY (`vendorId`) REFERENCES `vendors` (`vendorId`) ON DELETE CASCADE,
+  ADD CONSTRAINT `images_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE,
   ADD CONSTRAINT `images_ibfk_2` FOREIGN KEY (`productId`) REFERENCES `products` (`productId`) ON DELETE CASCADE;
+
+--
+-- Limiti per la tabella `productscategories`
+--
+ALTER TABLE `productscategories`
+  ADD CONSTRAINT `productscategories_ibfk_1` FOREIGN KEY (`productId`) REFERENCES `products` (`productId`) ON DELETE CASCADE,
+  ADD CONSTRAINT `productscategories_ibfk_2` FOREIGN KEY (`categoryId`) REFERENCES `categories` (`categoryId`) ON DELETE CASCADE;
 
 --
 -- Limiti per la tabella `provinces`
 --
 ALTER TABLE `provinces`
   ADD CONSTRAINT `provinces_ibfk_1` FOREIGN KEY (`regionId`) REFERENCES `regions` (`regionId`) ON DELETE CASCADE;
+
+--
+-- Limiti per la tabella `reviews`
+--
+ALTER TABLE `reviews`
+  ADD CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE,
+  ADD CONSTRAINT `reviews_ibfk_2` FOREIGN KEY (`productId`) REFERENCES `products` (`productId`) ON DELETE CASCADE;
 
 --
 -- Limiti per la tabella `towns`
@@ -8372,28 +8411,7 @@ ALTER TABLE `towns`
 -- Limiti per la tabella `users`
 --
 ALTER TABLE `users`
-  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`imageId`) REFERENCES `images` (`imageId`) ON DELETE CASCADE,
-  ADD CONSTRAINT `users_ibfk_2` FOREIGN KEY (`addressId`) REFERENCES `addresses` (`addressId`) ON DELETE CASCADE;
-
---
--- Limiti per la tabella `usersproducts`
---
-ALTER TABLE `usersproducts`
-  ADD CONSTRAINT `usersproducts_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE,
-  ADD CONSTRAINT `usersproducts_ibfk_2` FOREIGN KEY (`productId`) REFERENCES `products` (`productId`) ON DELETE CASCADE;
-
---
--- Limiti per la tabella `vendors`
---
-ALTER TABLE `vendors`
-  ADD CONSTRAINT `vendors_ibfk_1` FOREIGN KEY (`addressId`) REFERENCES `addresses` (`addressId`) ON DELETE CASCADE;
-
---
--- Limiti per la tabella `vendorsproducts`
---
-ALTER TABLE `vendorsproducts`
-  ADD CONSTRAINT `vendorsproducts_ibfk_1` FOREIGN KEY (`vendorId`) REFERENCES `vendors` (`vendorId`) ON DELETE CASCADE,
-  ADD CONSTRAINT `vendorsproducts_ibfk_2` FOREIGN KEY (`productId`) REFERENCES `products` (`productId`) ON DELETE CASCADE;
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`addressId`) REFERENCES `addresses` (`addressId`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
