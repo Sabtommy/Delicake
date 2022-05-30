@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 29, 2022 alle 15:24
+-- Creato il: Mag 30, 2022 alle 04:28
 -- Versione del server: 10.4.22-MariaDB
 -- Versione PHP: 8.1.1
 
@@ -20,6 +20,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `delicake`
 --
+
+DELIMITER $$
+--
+-- Procedure
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `checkUser` (IN `in_username` VARCHAR(255), OUT `userCount` INT)  BEGIN
+
+SELECT COUNT(userId) INTO userCount FROM users WHERE username=in_username;
+
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getUser` (IN `in_username` VARCHAR(255), OUT `out_userId` INT, OUT `out_username` VARCHAR(255))  BEGIN
+
+SELECT userId INTO out_userId FROM users WHERE username=in_username OR email=in_username;
+SELECT username INTO out_username FROM users WHERE username=in_username OR email=in_username;
+
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertUser` (IN `username` VARCHAR(255), IN `email` VARCHAR(255), IN `password` VARCHAR(255), IN `name` VARCHAR(255), IN `surname` VARCHAR(255), IN `dateOfBirth` DATE, IN `phone` VARCHAR(50))  BEGIN
+
+INSERT INTO `users`(`username`, `email`, `password`, `name`, `surname`, `dateOfBirth`, `phone`)
+VALUES(username, email, password, name, surname, dateOfBirth, phone);
+
+END$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -8227,6 +8253,14 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dump dei dati per la tabella `users`
+--
+
+INSERT INTO `users` (`userId`, `username`, `email`, `password`, `name`, `surname`, `dateOfBirth`, `phone`, `addressId`, `deleted`) VALUES
+(1, 'prova', 'prova@example.com', '$2y$10$GISIffErsx8kVLcK54lPjeHcErtrmitfbBLzQkbHrdXoxAJ91BF8G', 'Mario', 'Oiram', '2022-04-14', '', NULL, 0),
+(4, 'prova1', 'asdasd@asdasd.asd', '$2y$10$WWZ.RXUnY08MvC6mFb3mjeS11NrtoOpBjvO65XyUEOWpr.QBfPAm.', 'asd', 'asd', '2022-05-13', '', NULL, 0);
+
+--
 -- Indici per le tabelle scaricate
 --
 
@@ -8303,6 +8337,7 @@ ALTER TABLE `towns`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`userId`),
+  ADD UNIQUE KEY `uniqueUser` (`username`),
   ADD KEY `addressId` (`addressId`);
 
 --
@@ -8355,7 +8390,7 @@ ALTER TABLE `towns`
 -- AUTO_INCREMENT per la tabella `users`
 --
 ALTER TABLE `users`
-  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Limiti per le tabelle scaricate
