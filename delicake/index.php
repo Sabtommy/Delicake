@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Delicake</title>
-  <link rel="stylesheet" href="styles/style.css" type="text/css" />
-</head>
-
 <body>
   <section class="hero">
     <div class="hero__slider owl-carousel">
@@ -544,7 +536,6 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="scripts/script.js"></script>
 </body>
-
-</html>

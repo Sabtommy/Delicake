@@ -1,0 +1,23 @@
+h2 {
+    color: #111111;
+}
+
+.form-control:focus {
+    border-color: #fcbad3;
+    box-shadow: 0 0 0 0.2rem #fcbad3a2;
+    outline: none;
+}
+
+.link {
+  font-size: 12.5px;
+  margin-bottom: 0;
+}
+
+.form_select {
+  padding-right: -10px
+}
+
+form span {
+  margin-left: -300px;
+  cursor: pointer;
+}

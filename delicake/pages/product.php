@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Product</title>
+  <title>Product - Delicake</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css" />
 </head>
 

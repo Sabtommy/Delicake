@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>About</title>
+  <title>About - Delicake</title>
   <link rel="stylesheet" href="../styles/style.css" type="text/css" />
 </head>
 

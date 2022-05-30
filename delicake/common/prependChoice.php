@@ -8,6 +8,6 @@ if (!in_array($pageName, $obj->noHeader)) {
     include 'choices/header.php';
 }
 
-if (!in_array($pageName, $obj->noModel)) {
-    include 'choices/DBHandler.php';
+if (in_array($pageName, $obj->model)) {
+    include '../mvc/model.php';
 }

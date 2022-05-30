@@ -1,6 +1,6 @@
 {
     "name": "website pages",
-    "noFooter": ["login.php"],
-    "noModel": [],
-    "noHeader": ["login.php"]
+    "noHeader": ["model.php", "controller.php"],
+    "noFooter": ["signin.php", "register.php", "model.php", "controller.php"],
+    "model": ["controller.php"]
 }
