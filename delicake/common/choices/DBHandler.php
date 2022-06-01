@@ -1,6 +1,6 @@
 <?php
-abstract class DBHandler {
-    private static $db;
+class DBHandler {
+  private static $db;
 
   private function __construct() {}
 
@@ -25,7 +25,7 @@ abstract class DBHandler {
 
       self::$db = new PDO($connection_string, USER, PASSWORD, $connection_array);
     } catch (PDOException $e) {
-      $db = null;
+      self::$db = null;
     }
   }
 }

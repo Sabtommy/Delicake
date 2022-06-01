@@ -1,4 +1,21 @@
 <?php
+if (isset($_REQUEST['req'])) {
+  switch ($_REQUEST['req']) {
+      case 'products':
+          header('Location: ../userpages/products.php');
+          exit;
+          break;
+      case'shops':
+          header('Location: ../userpages/shops.php');
+          exit;
+          break;
+      case 'insertShop':
+          break;
+      default: header('Location: ../index.php');
+      exit;
+  }
+}
+
 if (isset($_POST['registration'])) {
   $username = htmlspecialchars($_POST['username']);
 

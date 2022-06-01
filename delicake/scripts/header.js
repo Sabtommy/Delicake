@@ -22,4 +22,13 @@
         $(".offcanvas-menu-wrapper").removeClass("active");
         $(".offcanvas-menu-overlay").removeClass("active");
     });
+
+    // Background set
+    $(".set-bg").each(function () {
+        var bg = $(this).data("setbg");
+        $(this).css("background-image", "url(" + bg + ")");
+    });
+
+    // Select
+    $("select").niceSelect();
 })(jQuery);

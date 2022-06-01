@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="../../styles/auth.css" />
   <title>Sign in - Delicake</title>
 </head>
 

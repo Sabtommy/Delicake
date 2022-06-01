@@ -3,8 +3,8 @@ h2 {
 }
 
 .form-control:focus {
-    border-color: #fcbad3;
-    box-shadow: 0 0 0 0.2rem #fcbad3a2;
+    border: 1px solid #fcbad3;
+    box-shadow: 0 0 0 0.1rem #fcbad3a2;
     outline: none;
 }
 
@@ -15,9 +15,4 @@ h2 {
 
 .form_select {
   padding-right: -10px
-}
-
-form span {
-  margin-left: -300px;
-  cursor: pointer;
 }

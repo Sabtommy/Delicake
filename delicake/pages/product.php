@@ -3,11 +3,10 @@
 
 <head>
   <title>Product - Delicake</title>
-  <link rel="stylesheet" href="../styles/style.css" type="text/css" />
 </head>
 
 <body>
-  <div class="breadcrumb-option">
+  <div class="pt-4">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -26,7 +25,7 @@
     </div>
   </div>
 
-  <section class="product-details spad">
+  <section class="product-details py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -71,8 +70,8 @@
                   <input type="text" value="2">
                 </div>
               </div>
-              <a href="#" class="primary-btn">Add to cart</a>
-              <a href="#" class="heart__btn"><span class="icon_heart_alt"></span></a>
+              <a href="" class="primary-btn">Add to cart</a>
+              <a href="" class="heart__btn"><span class="icon_heart_alt"></span></a>
             </div>
           </div>
         </div>
@@ -129,7 +128,7 @@
     </div>
   </section>
 
-  <section class="related-products spad">
+  <section class="related-products py-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -148,10 +147,10 @@
                 </div>
               </div>
               <div class="product__item__text">
-                <h6><a href="#">Dozen Cupcakes</a></h6>
+                <h6><a href="">Dozen Cupcakes</a></h6>
                 <div class="product__item__price">€32.00</div>
                 <div class="cart_add">
-                  <a href="#">Add to cart</a>
+                  <a href="">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -164,10 +163,10 @@
                 </div>
               </div>
               <div class="product__item__text">
-                <h6><a href="#">Cookies and Cream</a></h6>
+                <h6><a href="">Cookies and Cream</a></h6>
                 <div class="product__item__price">€30.00</div>
                 <div class="cart_add">
-                  <a href="#">Add to cart</a>
+                  <a href="">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -180,10 +179,10 @@
                 </div>
               </div>
               <div class="product__item__text">
-                <h6><a href="#">Gluten Free Mini Dozen</a></h6>
+                <h6><a href="">Gluten Free Mini Dozen</a></h6>
                 <div class="product__item__price">€31.00</div>
                 <div class="cart_add">
-                  <a href="#">Add to cart</a>
+                  <a href="">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -196,10 +195,10 @@
                 </div>
               </div>
               <div class="product__item__text">
-                <h6><a href="#">Cookie Dough</a></h6>
+                <h6><a href="">Cookie Dough</a></h6>
                 <div class="product__item__price">€25.00</div>
                 <div class="cart_add">
-                  <a href="#">Add to cart</a>
+                  <a href="">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -212,10 +211,10 @@
                 </div>
               </div>
               <div class="product__item__text">
-                <h6><a href="#">Vanilla Salted Caramel</a></h6>
+                <h6><a href="">Vanilla Salted Caramel</a></h6>
                 <div class="product__item__price">€5.00</div>
                 <div class="cart_add">
-                  <a href="#">Add to cart</a>
+                  <a href="">Add to cart</a>
                 </div>
               </div>
             </div>
@@ -228,10 +227,10 @@
                 </div>
               </div>
               <div class="product__item__text">
-                <h6><a href="#">German Chocolate</a></h6>
+                <h6><a href="">German Chocolate</a></h6>
                 <div class="product__item__price">€14.00</div>
                 <div class="cart_add">
-                  <a href="#">Add to cart</a>
+                  <a href="">Add to cart</a>
                 </div>
               </div>
             </div>

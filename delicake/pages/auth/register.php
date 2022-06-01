@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="../../styles/auth.css" />
   <title>Register - Delicake</title>
 </head>
 
@@ -41,7 +40,7 @@
           <!-- Password -->
           <div class="input-group col-lg-6 mb-4">
             <span class="input-group-prepend fa-solid fa-lock input-group-text bg-white p-3"></span>
-            <input type="password" placeholder="Password *" class="form-control" name="password" required />
+            <input type="password" placeholder="Password *" class="form-control toggle_password" name="password" required />
           </div>
 
           <!-- Password Confirmation -->

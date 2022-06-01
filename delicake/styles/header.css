@@ -75,6 +75,10 @@ ol {
     margin: 0;
 }
 
+.primary_color {
+    color: #fcbad3;
+}
+
 .btn,
 .btn:focus {
     background-color: #fcbad3;
@@ -87,8 +91,19 @@ ol {
     color: #ffffff;
 }
 
-.primary_color {
-    color: #fcbad3;
+.btn-link {
+    text-decoration: none;
+}
+
+.list-group-item.active {
+    background-color: #fcbad380;
+    border-color: #fcbad380;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .header {
@@ -351,6 +366,42 @@ ol {
 
 nav {
     padding: 0px 100px;
+}
+
+/* Breadcrumb */
+.pt-4 {
+    padding-top: 60px;
+}
+
+.breadcrumb__text h2 {
+    font-size: 50px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.breadcrumb__links {
+    text-align: right;
+    padding-top: 15px;
+}
+.breadcrumb__links a {
+    font-size: 16px;
+    color: #111111;
+    margin-right: 26px;
+    display: inline-block;
+    position: relative;
+}
+.breadcrumb__links a:after {
+    position: absolute;
+    right: -16px;
+    top: 0;
+    content: "|";
+    color: #888888;
+}
+.breadcrumb__links span {
+    font-size: 16px;
+    color: #888888;
+    display: inline-block;
 }
 
 /* Medium Device */
